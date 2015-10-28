@@ -1,6 +1,6 @@
 {
   "name": "csv-to-rewrite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert CSV to URL rewrites",
   "license": "MIT",
   "repository": "kevva/csv-to-rewrite",
