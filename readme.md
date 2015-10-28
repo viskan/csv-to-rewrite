@@ -15,14 +15,16 @@ $ npm install --save csv-to-rewrite
 ```js
 const csvToRewrite = require('csv-to-rewrite');
 
-csvToRewrite('name,from,to\Unicorns,http://foo.com,http://bar.com');
-/*
-	<rule>
-		<name>Unicorns</name>
-		<from>http://foo.com</from>
-		<to>http://bar.com</to>
-	</rule>
- */
+csvToRewrite('name,from,to\Unicorns,http://foo.com,http://bar.com').then(data => {
+	console.log(data);
+	/*
+		<rule>
+			<name>Unicorns</name>
+			<from>http://foo.com</from>
+			<to>http://bar.com</to>
+		</rule>
+	 */
+})
 ```
 
 
