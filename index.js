@@ -25,12 +25,16 @@ module.exports = (str, opts) => {
 			const tags = keys.map(key => {
 				const tag = key === 'to' ? `${key}${attrs}` : key;
 
+				if (!el[key]) {
+					return null;
+				}
+
 				if (key === 'from' && opts.strict) {
 					el[key] = `^${el[key].trim()}$`;
 				}
 
 				return `    <${tag}>${el[key].trim()}</${key}>`;
-			}).join('\n');
+			}).filter(Boolean).join('\n');
 
 			return redent(trimNewlines(`<rule>\n${tags}\n</rule>`));
 		});
