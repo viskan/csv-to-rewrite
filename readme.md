@@ -28,6 +28,21 @@ csvToRewrite('name,from,to\nUnicorns,http://foo.com,http://bar.com').then(data =
 ```
 
 
+## CLI
+
+```
+$ npm install --global csv-to-rewrite
+```
+
+```
+$ csv-to-rewrite --help
+
+  Example
+    $ csv-to-rewrite --out unicorn.xml unicorn.csv
+    $ cat unicorn.csv | csv-to-rewrite > unicorn.xml
+```
+
+
 ## License
 
 MIT © [Kevin Martensson](http://github.com/kevva)
