@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Convert CSV to URL rewrites",
   "license": "MIT",
-  "repository": "kevva/csv-to-rewrite",
+  "repository": "viskan/csv-to-rewrite",
   "author": {
     "name": "Kevin Martensson",
     "email": "kevinmartensson@gmail.com",
