@@ -19,6 +19,8 @@
     "index.js"
   ],
   "dependencies": {
+    "get-stdin": "^5.0.0",
+    "meow": "^3.4.2",
     "neat-csv": "^1.1.0",
     "pify": "^2.2.0",
     "pinkie-promise": "^1.0.0",
