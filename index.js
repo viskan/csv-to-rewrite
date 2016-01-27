@@ -33,7 +33,7 @@ module.exports = (str, opts) => {
 					el[key] = `^${el[key].trim()}$`;
 				}
 
-				return `    <${tag}>${el[key].trim()}</${key}>`;
+				return `	<${tag}>${el[key].trim()}</${key}>`;
 			}).filter(Boolean).join('\n');
 
 			return redent(trimNewlines(`<rule>\n${tags}\n</rule>`));
