@@ -9,6 +9,7 @@
     "email": "kevinmartensson@gmail.com",
     "url": "github.com/kevva"
   },
+  "bin": "cli.js",
   "engines": {
     "node": ">=4"
   },
@@ -16,6 +17,7 @@
     "test": "xo && ava"
   },
   "files": [
+    "cli.js",
     "index.js"
   ],
   "dependencies": {
